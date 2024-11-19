@@ -1,6 +1,6 @@
 # Mermaid Live Preview
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/abdelhakakermi.mermaid-live-preview)](https://marketplace.visualstudio.com/items/abdelhakakermi.mermaid-live-preview/changelog) [![Installs](https://img.shields.io/visual-studio-marketplace/i/abdelhakakermi.mermaid-live-preview)](https://marketplace.visualstudio.com/items?itemName=abdelhakakermi.mermaid-live-preview) [![Downloads](https://img.shields.io/visual-studio-marketplace/d/abdelhakakermi.mermaid-live-preview)](https://marketplace.visualstudio.com/items?itemName=abdelhakakermi.mermaid-live-preview)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/abdelhakakermi.mermaid-live)](https://marketplace.visualstudio.com/items/abdelhakakermi.mermaid-live/changelog) [![Installs](https://img.shields.io/visual-studio-marketplace/i/abdelhakakermi.mermaid-live)](https://marketplace.visualstudio.com/items?itemName=abdelhakakermi.mermaid-live) [![Downloads](https://img.shields.io/visual-studio-marketplace/d/abdelhakakermi.mermaid-live)](https://marketplace.visualstudio.com/items?itemName=abdelhakakermi.mermaid-live)
 
 <table>
 <tr>
@@ -38,11 +38,11 @@
 
 ## Known Issues
 
-- [Report issues here](https://github.com/your-username/mermaid-live-preview/issues)
+- [Report issues here](https://github.com/your-username/mermaid-live/issues)
 
 ## Contributing
 
-Found a bug or have a suggestion? Please open an issue on our [GitHub repository](https://github.com/your-username/mermaid-live-preview).
+Found a bug or have a suggestion? Please open an issue on our [GitHub repository](https://github.com/your-username/mermaid-live).
 
 ## License
 
