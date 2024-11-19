@@ -1,71 +1,49 @@
-# mermaid-live README
+# Mermaid Live Preview
 
-This is the README for your extension "mermaid-live". After writing up a brief description, we recommend including the following sections.
+[![Version](https://img.shields.io/visual-studio-marketplace/v/abdelhakakermi.mermaid-live-preview)](https://marketplace.visualstudio.com/items/abdelhakakermi.mermaid-live-preview/changelog) [![Installs](https://img.shields.io/visual-studio-marketplace/i/abdelhakakermi.mermaid-live-preview)](https://marketplace.visualstudio.com/items?itemName=abdelhakakermi.mermaid-live-preview) [![Downloads](https://img.shields.io/visual-studio-marketplace/d/abdelhakakermi.mermaid-live-preview)](https://marketplace.visualstudio.com/items?itemName=abdelhakakermi.mermaid-live-preview)
+
+<table>
+<tr>
+<td><img width="100" src="./resources/mermaid-icon.svg" /></td>
+<td>Real-time preview of Mermaid diagrams directly in VS Code. See your diagrams come to life as you type, with automatic updates and syntax highlighting.</td>
+</tr>
+</table>
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- 🔄 **Live Preview**: See your diagrams update in real-time as you type
+- 📊 **Multiple Diagrams**: Support for multiple Mermaid diagrams in a single file
+- 🎨 **Theme Support**: Adapts to your VS Code theme
+- 🚀 **Easy Access**: Dedicated sidebar view for quick access
+- ✨ **Auto-refresh**: Automatic updates when you modify your diagrams
 
-For example if there is an image subfolder under your extension project workspace:
+## How to Use
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Open a Markdown file
+2. Create a Mermaid diagram using code fence:
+   ````
+   ```mermaid
+   graph TD
+       A[Start] --> B{Is it?}
+       B -- Yes --> C[OK]
+       B -- No --> D[End]
+   ```
+   ````
+3. Click the Mermaid Preview icon in the activity bar
+4. Your diagram will appear in the sidebar preview panel
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- Visual Studio Code 1.60.0 or higher
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- [Report issues here](https://github.com/your-username/mermaid-live-preview/issues)
 
-## Release Notes
+## Contributing
 
-Users appreciate release notes as you update your extension.
+Found a bug or have a suggestion? Please open an issue on our [GitHub repository](https://github.com/your-username/mermaid-live-preview).
 
-### 1.0.0
+## License
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is licensed under the [MIT License](LICENSE).

@@ -1,14 +1,24 @@
 {
   "name": "mermaid-live",
   "displayName": "mermaid-live",
-  "description": "descr",
-  "version": "0.0.1",
+  "description": "Real-time preview of Mermaid diagrams directly in VS Code. See your diagrams come to life as you type, with automatic updates and syntax highlighting.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abakermi/vscode-cursorchat-downloader"
+  },
+  "publisher": "abdelhakakermi",
   "engines": {
-    "vscode": "^1.95.0"
+    "vscode": "^1.93.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#AC59F5",
+    "theme": "dark"
+  },
   "activationEvents": [
     "onLanguage:markdown",
     "onCommand:mermaid-live.preview"
@@ -26,7 +36,7 @@
         {
           "id": "mermaid-preview-container",
           "title": "Mermaid Preview",
-          "icon": "$(preview)"
+          "icon": "resources/mermaid-icon.svg"
         }
       ]
     },
@@ -34,8 +44,9 @@
       "mermaid-preview-container": [
         {
           "type": "webview",
-          "id": "mermaid-preview",
-          "name": "Mermaid Preview"
+          "id": "mermaid-preview-view",
+          "name": "Mermaid Preview",
+          "visibility": "visible"
         }
       ]
     }

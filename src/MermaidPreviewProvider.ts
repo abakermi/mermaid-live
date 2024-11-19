@@ -58,8 +58,48 @@ export class MermaidPreviewProvider implements vscode.WebviewViewProvider {
             <head>
                 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
                 <script>
-                    mermaid.initialize({ startOnLoad: true });
+                    // Force light theme for better visibility
+                    mermaid.initialize({ 
+                        startOnLoad: true,
+                        theme: 'neutral',
+                        securityLevel: 'loose',
+                        logLevel: 'error',
+                        fontFamily: 'var(--vscode-font-family)',
+                    });
+
+                    // Re-render on theme changes
+                    window.addEventListener('message', event => {
+                        if (event.data.type === 'refresh') {
+                            mermaid.initialize();
+                            mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+                        }
+                    });
                 </script>
+                <style>
+                    body {
+                        padding: 10px;
+                    }
+                    .mermaid {
+                        background-color: white;
+                        color: black;
+                        padding: 20px;
+                        margin: 10px 0;
+                        border-radius: 6px;
+                        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                    }
+                    /* Force text colors for better visibility */
+                    .mermaid text {
+                        fill: black !important;
+                    }
+                    .mermaid .actor {
+                        fill: white !important;
+                        stroke: #666 !important;
+                    }
+                    .mermaid .messageText {
+                        fill: black !important;
+                        stroke: none !important;
+                    }
+                </style>
             </head>
             <body>
                 ${diagrams.map(diagram => `

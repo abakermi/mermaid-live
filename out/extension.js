@@ -33,8 +33,10 @@ const MermaidPreviewProvider_1 = require("./MermaidPreviewProvider");
 // Your extension is activated the very first time the command is executed
 function activate(context) {
     const provider = new MermaidPreviewProvider_1.MermaidPreviewProvider(context.extensionUri);
-    context.subscriptions.push(vscode.window.registerWebviewViewProvider('mermaid-preview', provider), vscode.commands.registerCommand('mermaid-live.preview', () => {
-        vscode.commands.executeCommand('workbench.view.extension.mermaid-preview');
+    context.subscriptions.push(vscode.window.registerWebviewViewProvider('mermaid-preview-view', provider), vscode.commands.registerCommand('mermaid-live.preview', async () => {
+        // Focus the view directly instead of using workbench command
+        const view = await vscode.commands.executeCommand('workbench.view.extension.mermaid-preview-container');
+        return view;
     }));
 }
 // This method is called when your extension is deactivated

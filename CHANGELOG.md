@@ -2,8 +2,11 @@
 
 All notable changes to the "mermaid-live" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.0.0]
 
-## [Unreleased]
-
-- Initial release
+### Added
+- Live preview of Mermaid diagrams in sidebar
+- Auto-refresh on diagram changes
+- Support for multiple diagrams per file
+- Theme-aware rendering
+- Dedicated activity bar icon
