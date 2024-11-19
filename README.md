@@ -4,7 +4,7 @@
 
 <table>
 <tr>
-<td><img width="100" src="./resources/mermaid-icon.svg" /></td>
+<td><img width="100" src="./resources/icon.png" /></td>
 <td>Real-time preview of Mermaid diagrams directly in VS Code. See your diagrams come to life as you type, with automatic updates and syntax highlighting.</td>
 </tr>
 </table>
