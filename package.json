@@ -2,7 +2,7 @@
   "name": "mermaid-live",
   "displayName": "mermaid-live",
   "description": "Real-time preview of Mermaid diagrams directly in VS Code. See your diagrams come to life as you type, with automatic updates and syntax highlighting.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/abakermi/mermaid-live"
